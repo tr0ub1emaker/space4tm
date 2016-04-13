@@ -1,0 +1,13 @@
+package com.depend;
+
+public class TestThread1 implements Runnable {
+
+	int num = 100;
+	String str = new String();
+	
+	@Override
+	public void run() {
+		
+		
+	}
+}

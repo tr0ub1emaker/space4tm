@@ -1,0 +1,12 @@
+package com.test0330;
+
+public class Animal {
+
+	private String name;
+
+	
+	public static void main(String[] args) {
+		Animal duck = new Animal();
+		
+	}
+}

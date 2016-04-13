@@ -1,0 +1,63 @@
+package com.test;
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+import org.dom4j.Attribute;
+import org.dom4j.Document;
+import org.dom4j.DocumentException;
+import org.dom4j.Element;
+import org.dom4j.io.SAXReader;
+
+public class TestDom4J {
+
+	//读取的字符编码是按照XML文件头定义的编码来转换。如果遇到乱码问题，注意要把各处的编码名称保持一致即可。
+	public static Document read(String fileName) throws DocumentException{
+		
+		SAXReader reader = new SAXReader();
+		Document document = reader.read(new File(fileName));
+		return document;
+		
+	} 
+	
+	public static Element getRootElement(Document t){
+		return t.getRootElement();
+	}
+	
+	public void bar(Document document) throws DocumentException {
+
+        Element root = document.getRootElement();
+
+//        // iterate through child elements of root
+//        for ( Iterator i = root.elementIterator(); i.hasNext(); ) {
+//            Element element = (Element) i.next();
+//            // do something
+//            System.out.println(element.getName());
+//        }
+
+//        // iterate through child elements of root with element name "foo"
+//        for ( Iterator i = root.elementIterator( "column" ); i.hasNext(); ) {
+//            Element foo = (Element) i.next();
+//            System.out.println(foo.getName());
+//            // do something
+//        }
+//
+        // iterate through attributes of root 
+        for ( Iterator i = root.attributeIterator(); i.hasNext(); ) {
+            Attribute attribute = (Attribute) i.next();
+            System.out.println(attribute);
+        }
+     }
+	
+	public static void main(String[] args) throws DocumentException {
+		
+		TestDom4J td =  new TestDom4J();
+		Document document = read("WebContent/resource/table_columns.xml");
+		td.bar(document);
+//		System.out.println(document.asXML());
+		System.out.println(getRootElement(document).getName());
+		
+	}
+}
