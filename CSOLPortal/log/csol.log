@@ -1,0 +1,133 @@
+[INFO ] [2015-08-20-16:40:27.656] com.ibm.ios.mycsol.task.TaskManager.initialze(TaskManager.java:28), Task manager initialize start.
+[INFO ] [2015-08-20-16:40:27.672] com.ibm.ios.mycsol.task.TaskManager.loadProperties(TaskManager.java:51), Load properties start.
+[INFO ] [2015-08-20-16:40:27.678] com.ibm.ios.mycsol.task.TaskManager.loadProperties(TaskManager.java:57), Load properties end.
+[INFO ] [2015-08-20-16:40:27.680] com.ibm.ios.mycsol.dao.DBConnection.initialize(DBConnection.java:67), DB connection initialize start.
+[INFO ] [2015-08-20-16:40:28.803] com.ibm.ios.mycsol.dao.DBConnection.initialize(DBConnection.java:96), DB connection initialize end.
+[INFO ] [2015-08-20-16:40:28.809] com.ibm.ios.mycsol.mail.SMTPClient.initialize(SMTPClient.java:93), SMTPClient initialize start.
+[INFO ] [2015-08-20-16:40:28.809] com.ibm.ios.mycsol.mail.SMTPClient.initialize(SMTPClient.java:111), mail.smtp.auth : false
+[INFO ] [2015-08-20-16:40:28.816] com.ibm.ios.mycsol.mail.SMTPClient.initialize(SMTPClient.java:115), SMTPClient initialize end.
+[INFO ] [2015-08-20-16:40:28.817] com.ibm.ios.mycsol.task.TaskManager.initialze(TaskManager.java:44), Task manager initialize end.
+[INFO ] [2015-08-20-16:40:28.817] com.ibm.ios.mycsol.task.TaskManager.launchTask(TaskManager.java:66), Launch task start.
+[INFO ] [2015-08-20-16:40:28.822] com.ibm.ios.mycsol.task.TaskManager.launchTask(TaskManager.java:72), Launch task end.
+[INFO ] [2015-08-20-16:40:28.827] com.ibm.ios.mycsol.task.TaskProcessor.initLoop(TaskProcessor.java:94), Task processor initLoop start.
+[INFO ] [2015-08-20-16:40:28.827] com.ibm.ios.mycsol.task.BusinessLogicHandler.getStartNum(BusinessLogicHandler.java:59), getStartNum start.
+[INFO ] [2015-08-20-16:40:28.829] com.ibm.ios.mycsol.dao.DAO.initialize(DAO.java:76), DAO QueryData.getStartNum initialize start.
+[INFO ] [2015-08-20-16:40:28.829] com.ibm.ios.mycsol.dao.DBConnection.getConnection(DBConnection.java:104), Generate singleton DB connection.
+[INFO ] [2015-08-20-16:40:28.830] com.ibm.ios.mycsol.dao.DAO.initialize(DAO.java:85), DAO QueryData.getStartNum initialize end.
+[INFO ] [2015-08-20-16:40:28.830] com.ibm.ios.mycsol.dao.DAOFactory.getDAO(DAOFactory.java:51), DAO QueryData.getStartNum instance does not exist, create new one.
+[INFO ] [2015-08-20-16:40:28.830] com.ibm.ios.mycsol.dao.DAO.executeSelect(DAO.java:129), DAO QueryData.getStartNum executeSelect start.
+[INFO ] [2015-08-20-16:40:28.831] com.ibm.ios.mycsol.dao.DAO.executeSelect(DAO.java:134), SELECT FINISH_NUM FROM GTM.CSOL_TASK WHERE ID = (SELECT MAX(ID) FROM GTM.CSOL_TASK)
+[INFO ] [2015-08-20-16:40:29.001] com.ibm.ios.mycsol.dao.DAO.executeSelect(DAO.java:160), DAO QueryData.getStartNum executeSelect end.
+[INFO ] [2015-08-20-16:40:29.002] com.ibm.ios.mycsol.task.BusinessLogicHandler.getStartNum(BusinessLogicHandler.java:66), getStartNum end. startNum:1
+[INFO ] [2015-08-20-16:40:29.002] com.ibm.ios.mycsol.task.BusinessLogicHandler.getRecordsCount(BusinessLogicHandler.java:76), getRecordsCount start.
+[INFO ] [2015-08-20-16:40:29.003] com.ibm.ios.mycsol.dao.DAO.initialize(DAO.java:76), DAO QueryData.getUpdatedRecords initialize start.
+[INFO ] [2015-08-20-16:40:29.003] com.ibm.ios.mycsol.dao.DBConnection.getConnection(DBConnection.java:104), Generate singleton DB connection.
+[INFO ] [2015-08-20-16:40:29.003] com.ibm.ios.mycsol.dao.DAO.initialize(DAO.java:85), DAO QueryData.getUpdatedRecords initialize end.
+[INFO ] [2015-08-20-16:40:29.004] com.ibm.ios.mycsol.dao.DAOFactory.getDAO(DAOFactory.java:51), DAO QueryData.getUpdatedRecords instance does not exist, create new one.
+[INFO ] [2015-08-20-16:40:29.004] com.ibm.ios.mycsol.dao.DAO.setParameter(DAO.java:228), DAO QueryData.getUpdatedRecords setParameter(key, value) start.
+[INFO ] [2015-08-20-16:40:29.004] com.ibm.ios.mycsol.dao.DAO.setParameter(DAO.java:229), Parameter : {key:ID,value:1}
+[INFO ] [2015-08-20-16:40:29.005] com.ibm.ios.mycsol.dao.DAO.setParameter(DAO.java:231), DAO QueryData.getUpdatedRecords setParameter(key, value) end.
+[INFO ] [2015-08-20-16:40:29.005] com.ibm.ios.mycsol.dao.DAO.getSelectCount(DAO.java:93), DAO QueryData.getUpdatedRecords getSelectCount start.
+[INFO ] [2015-08-20-16:40:29.005] com.ibm.ios.mycsol.dao.DAO.getSelectCount(DAO.java:98), WITH TMP AS( SELECT ID, ORDER_ID, LINE_ITEM_ID, FULLFILL_ORD_NUM, CUSTOMER_PO_NUM, CUSTOMER_REF_NUM, INAC_CODE, UI_ENTERPRISE, UI_COMPANY_NUMBER, CUST_NAME, UI_SOLDTO_CUST, SOLDTO_MPP_NUM, SOLDTO_CMR_NUM, ISO_COUNTRY_CODE, LEGACY_CTRY_CODE, O_ITEMSTATUS_CD, ITEMSTATUS_CD, O_PSSD, PSSD, O_CAD, CAD, NOTIFICATION_TYPE, UPDATE_TIMESTAMP, ROW_NUMBER() OVER(PARTITION BY FULLFILL_ORD_NUM, LINE_ITEM_ID ORDER BY ID DESC) AS RANKNUM FROM GTM.CSOL_NOTIFICATION WHERE ID >= ?) SELECT ID, ORDER_ID, LINE_ITEM_ID, FULLFILL_ORD_NUM, CUSTOMER_PO_NUM, CUSTOMER_REF_NUM, INAC_CODE, UI_ENTERPRISE, UI_COMPANY_NUMBER, CUST_NAME, UI_SOLDTO_CUST, SOLDTO_MPP_NUM, SOLDTO_CMR_NUM, ISO_COUNTRY_CODE, LEGACY_CTRY_CODE, O_ITEMSTATUS_CD, ITEMSTATUS_CD, O_PSSD, PSSD, O_CAD, CAD, NOTIFICATION_TYPE, UPDATE_TIMESTAMP FROM TMP WHERE RANKNUM = '1'
+[INFO ] [2015-08-20-16:40:29.378] com.ibm.ios.mycsol.dao.DAO.getSelectCount(DAO.java:119), DAO QueryData.getUpdatedRecords getSelectCount end.
+[INFO ] [2015-08-20-16:40:29.380] com.ibm.ios.mycsol.task.BusinessLogicHandler.getRecordsCount(BusinessLogicHandler.java:80), getRecordsCount end. RecordsCount:1
+[INFO ] [2015-08-20-16:40:29.381] com.ibm.ios.mycsol.task.BusinessLogicHandler.getUpdateRecords(BusinessLogicHandler.java:91), getUpdateRecords start.
+[INFO ] [2015-08-20-16:40:29.382] com.ibm.ios.mycsol.dao.DAOFactory.getDAO(DAOFactory.java:45), DAO QueryData.getUpdatedRecords instance already exists, return that one.
+[INFO ] [2015-08-20-16:40:29.383] com.ibm.ios.mycsol.dao.DAO.setParameter(DAO.java:228), DAO QueryData.getUpdatedRecords setParameter(key, value) start.
+[INFO ] [2015-08-20-16:40:29.384] com.ibm.ios.mycsol.dao.DAO.setParameter(DAO.java:229), Parameter : {key:ID,value:1}
+[INFO ] [2015-08-20-16:40:29.385] com.ibm.ios.mycsol.dao.DAO.setParameter(DAO.java:231), DAO QueryData.getUpdatedRecords setParameter(key, value) end.
+[INFO ] [2015-08-20-16:40:29.386] com.ibm.ios.mycsol.dao.DAO.getDAOResultFetcher(DAO.java:170), DAO QueryData.getUpdatedRecords getDAOResultFetcher start.
+[INFO ] [2015-08-20-16:40:29.387] com.ibm.ios.mycsol.dao.DAO.getDAOResultFetcher(DAO.java:175), WITH TMP AS( SELECT ID, ORDER_ID, LINE_ITEM_ID, FULLFILL_ORD_NUM, CUSTOMER_PO_NUM, CUSTOMER_REF_NUM, INAC_CODE, UI_ENTERPRISE, UI_COMPANY_NUMBER, CUST_NAME, UI_SOLDTO_CUST, SOLDTO_MPP_NUM, SOLDTO_CMR_NUM, ISO_COUNTRY_CODE, LEGACY_CTRY_CODE, O_ITEMSTATUS_CD, ITEMSTATUS_CD, O_PSSD, PSSD, O_CAD, CAD, NOTIFICATION_TYPE, UPDATE_TIMESTAMP, ROW_NUMBER() OVER(PARTITION BY FULLFILL_ORD_NUM, LINE_ITEM_ID ORDER BY ID DESC) AS RANKNUM FROM GTM.CSOL_NOTIFICATION WHERE ID >= ?) SELECT ID, ORDER_ID, LINE_ITEM_ID, FULLFILL_ORD_NUM, CUSTOMER_PO_NUM, CUSTOMER_REF_NUM, INAC_CODE, UI_ENTERPRISE, UI_COMPANY_NUMBER, CUST_NAME, UI_SOLDTO_CUST, SOLDTO_MPP_NUM, SOLDTO_CMR_NUM, ISO_COUNTRY_CODE, LEGACY_CTRY_CODE, O_ITEMSTATUS_CD, ITEMSTATUS_CD, O_PSSD, PSSD, O_CAD, CAD, NOTIFICATION_TYPE, UPDATE_TIMESTAMP FROM TMP WHERE RANKNUM = '1'
+[INFO ] [2015-08-20-16:40:29.394] com.ibm.ios.mycsol.dao.DAO.getDAOResultFetcher(DAO.java:183), DAO QueryData.getUpdatedRecords getDAOResultFetcher end.
+[INFO ] [2015-08-20-16:40:29.395] com.ibm.ios.mycsol.task.BusinessLogicHandler.getUpdateRecords(BusinessLogicHandler.java:95), getUpdateRecords end.
+[INFO ] [2015-08-20-16:40:29.400] com.ibm.ios.mycsol.task.TaskProcessor.initLoop(TaskProcessor.java:112), Task processor initLoop end.
+[INFO ] [2015-08-20-16:40:29.401] com.ibm.ios.mycsol.task.TaskProcessor.fetchProcess(TaskProcessor.java:123), Task processor fetch process start.
+[INFO ] [2015-08-20-16:40:29.402] com.ibm.ios.mycsol.dao.DAOResultFetcher.fetch(DAOResultFetcher.java:67), DAO resultset fetch start.
+[INFO ] [2015-08-20-16:40:29.412] com.ibm.ios.mycsol.dao.DAOResultFetcher.fetch(DAOResultFetcher.java:91), [ID:2,ORDER_ID:123,LINE_ITEM_ID:456,FULLFILL_ORD_NUM:FFORDNUMFX04ASD       ,CUSTOMER_PO_NUM:PONUMGSFGSGREDSF,CUSTOMER_REF_NUM:REFNUMDFSDFDSFSF,INAC_CODE:I_C ,UI_ENTERPRISE:UI_E_P    ,UI_COMPANY_NUMBER:COMNUM123 ,CUST_NAME:CUSTNAME,UI_SOLDTO_CUST:UISOLDCUST,SOLDTO_MPP_NUM:STMPPNUM  ,SOLDTO_CMR_NUM:STCMRNUM  ,ISO_COUNTRY_CODE:789,LEGACY_CTRY_CODE:010,O_ITEMSTATUS_CD:OITEMCD ,ITEMSTATUS_CD:ITEMCD  ,O_PSSD:2015-08-02,PSSD:2015-08-03,O_CAD:2015-07-30,CAD:2015-08-01,NOTIFICATION_TYPE:08,UPDATE_TIMESTAMP:2015-08-03 20:36:00.123]
+[INFO ] [2015-08-20-16:40:29.416] com.ibm.ios.mycsol.dao.DAOResultFetcher.fetch(DAOResultFetcher.java:92), DAO resultset fetch end.
+[INFO ] [2015-08-20-16:40:29.417] com.ibm.ios.mycsol.task.TaskProcessor.fetchProcess(TaskProcessor.java:132), Task processor fetch process end. ret:0
+[INFO ] [2015-08-20-16:40:29.417] com.ibm.ios.mycsol.task.TaskProcessor.mainProcess(TaskProcessor.java:142), Task processor main process start.
+[INFO ] [2015-08-20-16:40:29.418] com.ibm.ios.mycsol.task.BusinessLogicHandler.createMessage(BusinessLogicHandler.java:118), createMessage start.
+[INFO ] [2015-08-20-16:40:29.436] com.ibm.ios.mycsol.task.BusinessLogicHandler.createMessage(BusinessLogicHandler.java:165), createMessage end.
+[INFO ] [2015-08-20-16:40:29.437] com.ibm.ios.mycsol.util.XMLParser.buildNotification(XMLParser.java:58), buildNotification start.
+[INFO ] [2015-08-20-16:40:29.468] com.ibm.ios.mycsol.util.XMLParser.fillElements(XMLParser.java:89), fillElements start.
+[INFO ] [2015-08-20-16:40:29.469] com.ibm.ios.mycsol.util.XMLParser.fillElements(XMLParser.java:89), fillElements start.
+[INFO ] [2015-08-20-16:40:29.469] com.ibm.ios.mycsol.util.XMLParser.fillElements(XMLParser.java:100), fillElements end.
+[INFO ] [2015-08-20-16:40:29.470] com.ibm.ios.mycsol.util.XMLParser.fillElements(XMLParser.java:89), fillElements start.
+[INFO ] [2015-08-20-16:40:29.470] com.ibm.ios.mycsol.util.XMLParser.fillElements(XMLParser.java:100), fillElements end.
+[INFO ] [2015-08-20-16:40:29.471] com.ibm.ios.mycsol.util.XMLParser.fillElements(XMLParser.java:89), fillElements start.
+[INFO ] [2015-08-20-16:40:29.471] com.ibm.ios.mycsol.util.XMLParser.fillElements(XMLParser.java:100), fillElements end.
+[INFO ] [2015-08-20-16:40:29.471] com.ibm.ios.mycsol.util.XMLParser.fillElements(XMLParser.java:89), fillElements start.
+[INFO ] [2015-08-20-16:40:29.472] com.ibm.ios.mycsol.util.XMLParser.fillElements(XMLParser.java:100), fillElements end.
+[INFO ] [2015-08-20-16:40:29.472] com.ibm.ios.mycsol.util.XMLParser.fillElements(XMLParser.java:89), fillElements start.
+[INFO ] [2015-08-20-16:40:29.472] com.ibm.ios.mycsol.util.XMLParser.fillElements(XMLParser.java:100), fillElements end.
+[INFO ] [2015-08-20-16:40:29.473] com.ibm.ios.mycsol.util.XMLParser.fillElements(XMLParser.java:89), fillElements start.
+[INFO ] [2015-08-20-16:40:29.473] com.ibm.ios.mycsol.util.XMLParser.fillElements(XMLParser.java:100), fillElements end.
+[INFO ] [2015-08-20-16:40:29.473] com.ibm.ios.mycsol.util.XMLParser.fillElements(XMLParser.java:89), fillElements start.
+[INFO ] [2015-08-20-16:40:29.474] com.ibm.ios.mycsol.util.XMLParser.fillElements(XMLParser.java:100), fillElements end.
+[INFO ] [2015-08-20-16:40:29.474] com.ibm.ios.mycsol.util.XMLParser.fillElements(XMLParser.java:89), fillElements start.
+[INFO ] [2015-08-20-16:40:29.474] com.ibm.ios.mycsol.util.XMLParser.fillElements(XMLParser.java:100), fillElements end.
+[INFO ] [2015-08-20-16:40:29.475] com.ibm.ios.mycsol.util.XMLParser.fillElements(XMLParser.java:89), fillElements start.
+[INFO ] [2015-08-20-16:40:29.475] com.ibm.ios.mycsol.util.XMLParser.fillElements(XMLParser.java:100), fillElements end.
+[INFO ] [2015-08-20-16:40:29.475] com.ibm.ios.mycsol.util.XMLParser.fillElements(XMLParser.java:89), fillElements start.
+[INFO ] [2015-08-20-16:40:29.475] com.ibm.ios.mycsol.util.XMLParser.fillElements(XMLParser.java:100), fillElements end.
+[INFO ] [2015-08-20-16:40:29.476] com.ibm.ios.mycsol.util.XMLParser.fillElements(XMLParser.java:89), fillElements start.
+[INFO ] [2015-08-20-16:40:29.476] com.ibm.ios.mycsol.util.XMLParser.fillElements(XMLParser.java:100), fillElements end.
+[INFO ] [2015-08-20-16:40:29.476] com.ibm.ios.mycsol.util.XMLParser.fillElements(XMLParser.java:89), fillElements start.
+[INFO ] [2015-08-20-16:40:29.477] com.ibm.ios.mycsol.util.XMLParser.fillElements(XMLParser.java:100), fillElements end.
+[INFO ] [2015-08-20-16:40:29.477] com.ibm.ios.mycsol.util.XMLParser.fillElements(XMLParser.java:89), fillElements start.
+[INFO ] [2015-08-20-16:40:29.477] com.ibm.ios.mycsol.util.XMLParser.fillElements(XMLParser.java:100), fillElements end.
+[INFO ] [2015-08-20-16:40:29.477] com.ibm.ios.mycsol.util.XMLParser.fillElements(XMLParser.java:89), fillElements start.
+[INFO ] [2015-08-20-16:40:29.478] com.ibm.ios.mycsol.util.XMLParser.fillElements(XMLParser.java:100), fillElements end.
+[INFO ] [2015-08-20-16:40:29.478] com.ibm.ios.mycsol.util.XMLParser.fillElements(XMLParser.java:89), fillElements start.
+[INFO ] [2015-08-20-16:40:29.478] com.ibm.ios.mycsol.util.XMLParser.fillElements(XMLParser.java:100), fillElements end.
+[INFO ] [2015-08-20-16:40:29.479] com.ibm.ios.mycsol.util.XMLParser.fillElements(XMLParser.java:89), fillElements start.
+[INFO ] [2015-08-20-16:40:29.479] com.ibm.ios.mycsol.util.XMLParser.fillElements(XMLParser.java:100), fillElements end.
+[INFO ] [2015-08-20-16:40:29.480] com.ibm.ios.mycsol.util.XMLParser.fillElements(XMLParser.java:89), fillElements start.
+[INFO ] [2015-08-20-16:40:29.480] com.ibm.ios.mycsol.util.XMLParser.fillElements(XMLParser.java:100), fillElements end.
+[INFO ] [2015-08-20-16:40:29.481] com.ibm.ios.mycsol.util.XMLParser.fillElements(XMLParser.java:89), fillElements start.
+[INFO ] [2015-08-20-16:40:29.481] com.ibm.ios.mycsol.util.XMLParser.fillElements(XMLParser.java:100), fillElements end.
+[INFO ] [2015-08-20-16:40:29.481] com.ibm.ios.mycsol.util.XMLParser.fillElements(XMLParser.java:89), fillElements start.
+[INFO ] [2015-08-20-16:40:29.482] com.ibm.ios.mycsol.util.XMLParser.fillElements(XMLParser.java:100), fillElements end.
+[INFO ] [2015-08-20-16:40:29.482] com.ibm.ios.mycsol.util.XMLParser.fillElements(XMLParser.java:100), fillElements end.
+[INFO ] [2015-08-20-16:40:29.483] com.ibm.ios.mycsol.util.XMLParser.buildNotification(XMLParser.java:79), buildNotification end.
+[INFO ] [2015-08-20-16:40:29.489] com.ibm.ios.mycsol.task.BusinessLogicHandler.setSubject(BusinessLogicHandler.java:177), setSubject start.
+[INFO ] [2015-08-20-16:40:29.490] com.ibm.ios.mycsol.task.BusinessLogicHandler.setSubject(BusinessLogicHandler.java:190), setSubject end. Subject:IOS CSOL Portal Alert - Order[FFORDNUMFX04ASD       ] status is [PSSD-changed]
+[INFO ] [2015-08-20-16:40:29.490] com.ibm.ios.mycsol.task.BusinessLogicHandler.setBodyText(BusinessLogicHandler.java:202), setBodyText start.
+[INFO ] [2015-08-20-16:40:29.496] com.ibm.ios.mycsol.task.BusinessLogicHandler.setBodyText(BusinessLogicHandler.java:230), setBodyText end.
+[INFO ] [2015-08-20-16:40:29.497] com.ibm.ios.mycsol.task.TaskProcessor.mainProcess(TaskProcessor.java:150), Task processor main process end.
+[INFO ] [2015-08-20-16:40:29.497] com.ibm.ios.mycsol.task.TaskProcessor.fetchProcess(TaskProcessor.java:123), Task processor fetch process start.
+[INFO ] [2015-08-20-16:40:29.497] com.ibm.ios.mycsol.dao.DAOResultFetcher.fetch(DAOResultFetcher.java:67), DAO resultset fetch start.
+[INFO ] [2015-08-20-16:40:29.498] com.ibm.ios.mycsol.task.TaskProcessor.fetchProcess(TaskProcessor.java:132), Task processor fetch process end. ret:-1
+[INFO ] [2015-08-20-16:40:29.498] com.ibm.ios.mycsol.task.TaskProcessor.endLoop(TaskProcessor.java:159), Task processor endLoop start.
+[INFO ] [2015-08-20-16:40:29.499] com.ibm.ios.mycsol.mail.SMTPClient.sendMail(SMTPClient.java:123), Send notification email start.
+[ERROR] [2015-08-20-16:40:31.560] com.ibm.ios.mycsol.mail.SMTPClient.sendMail(SMTPClient.java:132), 
+javax.mail.internet.AddressException: Empty address
+	at javax.mail.internet.InternetAddress.checkAddress(InternetAddress.java:1149) ~[mail.jar:1.4.7]
+	at javax.mail.internet.InternetAddress.parse(InternetAddress.java:1091) ~[mail.jar:1.4.7]
+	at javax.mail.internet.InternetAddress.parseHeader(InternetAddress.java:658) ~[mail.jar:1.4.7]
+	at javax.mail.internet.MimeMessage.getAddressHeader(MimeMessage.java:702) ~[mail.jar:1.4.7]
+	at javax.mail.internet.MimeMessage.getFrom(MimeMessage.java:362) ~[mail.jar:1.4.7]
+	at com.sun.mail.smtp.SMTPTransport.mailFrom(SMTPTransport.java:1546) ~[mail.jar:1.4.7]
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1117) ~[mail.jar:1.4.7]
+	at javax.mail.Transport.send0(Transport.java:195) ~[mail.jar:1.4.7]
+	at javax.mail.Transport.send(Transport.java:124) ~[mail.jar:1.4.7]
+	at com.ibm.ios.mycsol.mail.SMTPClient.sendMail(SMTPClient.java:129) [bin/:?]
+	at com.ibm.ios.mycsol.task.TaskProcessor.endLoop(TaskProcessor.java:161) [bin/:?]
+	at com.ibm.ios.mycsol.task.TaskProcessor.run(TaskProcessor.java:201) [bin/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441) [?:1.6.0]
+	at java.util.concurrent.FutureTask$Sync.innerRunAndReset(FutureTask.java:317) [?:1.6.0]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:150) [?:1.6.0]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$101(ScheduledThreadPoolExecutor.java:98) [?:1.6.0]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.runPeriodic(ScheduledThreadPoolExecutor.java:180) [?:1.6.0]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:204) [?:1.6.0]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) [?:1.6.0]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) [?:1.6.0]
+	at java.lang.Thread.run(Thread.java:736) [?:1.6.0]
+[INFO ] [2015-08-20-16:40:31.567] com.ibm.ios.mycsol.mail.SMTPClient.sendMail(SMTPClient.java:134), Send notification email end.
+[INFO ] [2015-08-20-16:40:31.568] com.ibm.ios.mycsol.task.BusinessLogicHandler.insertTaskResult(BusinessLogicHandler.java:105), getUpdateRecords start.
+[INFO ] [2015-08-20-16:40:31.569] com.ibm.ios.mycsol.dao.DAO.initialize(DAO.java:76), DAO QueryData.insertTaskResult initialize start.
+[INFO ] [2015-08-20-16:40:31.570] com.ibm.ios.mycsol.dao.DBConnection.getConnection(DBConnection.java:104), Generate singleton DB connection.
+[INFO ] [2015-08-20-16:40:31.575] com.ibm.ios.mycsol.dao.DAO.initialize(DAO.java:85), DAO QueryData.insertTaskResult initialize end.
+[INFO ] [2015-08-20-16:40:31.576] com.ibm.ios.mycsol.dao.DAOFactory.getDAO(DAOFactory.java:51), DAO QueryData.insertTaskResult instance does not exist, create new one.
+[INFO ] [2015-08-20-16:40:31.576] com.ibm.ios.mycsol.dao.DAO.setParameter(DAO.java:239), DAO QueryData.insertTaskResult setParameter(BeanBase) start.

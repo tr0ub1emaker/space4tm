@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tables>
+	<table name="ALERT_EMAIL_KEY">
+		<column/>
+	</table>
+	<table name="BASKETBALL">
+		<column/>
+	</table>
+	<table name="BH_SHIPMENT">
+		<column/>
+	</table>
+	<table name="BLI_INVOICE_LINE">
+		<column/>
+	</table>
+	<table name="BPSI_HWPM">
+		<column/>
+	</table>
+	<table name="BPSI_INDH">
+		<column/>
+	</table>
+	<table name="BPSI_INHH">
+		<column/>
+	</table>
+	<table name="BPSI_ORLM">
+		<column/>
+	</table>
+	<table name="BP_REF">
+		<column/>
+	</table>
+	<table name="BRAND_REF">
+		<column/>
+	</table>
+	<table name="BSE_CONTRACT">
+		<column/>
+	</table>
+	<table name="BSE_FEATURE">
+		<column/>
+	</table>
+	<table name="BSE_INST_HARDWARE">
+		<column/>
+	</table>
+	<table name="BSE_LINE_ITEM">
+		<column/>
+	</table>
+	<table name="BSE_MAINT_AGREE">
+		<column/>
+	</table>
+	<table name="BSE_MANUFACTURING">
+		<column/>
+	</table>
+	<table name="BSE_ORDER">
+		<column/>
+	</table>
+	<table name="BSE_ORDER_SHIP">
+		<column/>
+	</table>
+	<table name="BSE_SHIPMENT">
+		<column/>
+	</table>
+	<table name="BSE_SHIP_STATUS">
+		<column/>
+	</table>
+	<table name="BSE_SOFTWARE_SUB">
+		<column/>
+	</table>
+	<table name="CALENDAR_DIM">
+		<column/>
+	</table>
+	<table name="CARRIER">
+		<column/>
+	</table>
+	<table name="CARRIER_TRANSLATION">
+		<column/>
+	</table>
+	<table name="CDC_CARRIER">
+		<column/>
+	</table>
+	<table name="CDC_CONTRACT">
+		<column/>
+	</table>
+	<table name="CDC_CUSTOMER">
+		<column/>
+	</table>
+	<table name="CDC_CUST_LINE">
+		<column/>
+	</table>
+	<table name="CDC_CUST_ORDER">
+		<column/>
+	</table>
+	<table name="CDC_DER_LINE_SEG">
+		<column/>
+	</table>
+	<table name="CDC_DLS_SERIAL">
+		<column/>
+	</table>
+	<table name="CDC_FEATURE">
+		<column/>
+	</table>
+	<table name="CDC_INST_HARDWARE">
+		<column/>
+	</table>
+	<table name="CDC_INVOICE">
+		<column/>
+	</table>
+	<table name="CDC_INV_LINE_ITEM">
+		<column/>
+	</table>
+	<table name="CDC_INV_SOURCE">
+		<column/>
+	</table>
+	<table name="CDC_LINE_ITEM">
+		<column/>
+	</table>
+	<table name="CDC_MAINT_AGREE">
+		<column/>
+	</table>
+	<table name="CDC_MANUFACTURING">
+		<column/>
+	</table>
+	<table name="CDC_ORDER">
+		<column/>
+	</table>
+	<table name="CDC_ORDER_SHIP">
+		<column/>
+	</table>
+	<table name="CDC_PLANT_ORDER">
+		<column/>
+	</table>
+	<table name="CDC_PORDER_SHIP">
+		<column/>
+	</table>
+	<table name="CDC_SCHEDULE">
+		<column/>
+	</table>
+	<table name="CDC_SERV_BILL">
+		<column/>
+	</table>
+	<table name="CDC_SHIPMENT">
+		<column/>
+	</table>
+	<table name="CDC_SHIP_LINE_ITEM">
+		<column/>
+	</table>
+	<table name="CDC_SHIP_STATUS_SUMRY">
+		<column/>
+	</table>
+	<table name="CDC_SOFTWARE_SUB">
+		<column/>
+	</table>
+	<table name="CDC_STATSDB">
+		<column/>
+	</table>
+	<table name="CDC_STATUS_SUMRY">
+		<column/>
+	</table>
+	<table name="CD_BLI_INVOICE_LINE">
+		<column/>
+	</table>
+	<table name="CD_BP_REF">
+		<column/>
+	</table>
+	<table name="CD_BRAND_REF">
+		<column/>
+	</table>
+	<table name="CD_CARRIER">
+		<column/>
+	</table>
+	<table name="CD_COMPONENT">
+		<column/>
+	</table>
+	<table name="CD_COMPONENT_SHIP">
+		<column/>
+	</table>
+	<table name="CD_CONTRACT">
+		<column/>
+	</table>
+	<table name="CD_COUNTRY_REF">
+		<column/>
+	</table>
+	<table name="CD_CSOL_NOTI">
+		<column/>
+	</table>
+	<table name="CD_CUSTOMER">
+		<column/>
+	</table>
+	<table name="CD_CUSTOMER_CROSS_REF">
+		<column/>
+	</table>
+	<table name="CD_CUST_ADDR">
+		<column/>
+	</table>
+	<table name="CD_CUST_LINE">
+		<column/>
+	</table>
+	<table name="CD_CUST_ORDER">
+		<column/>
+	</table>
+	<table name="CD_DER_LINE_SEG">
+		<column/>
+	</table>
+	<table name="CD_DLS_SERIAL">
+		<column/>
+	</table>
+	<table name="CD_FEATURE">
+		<column/>
+	</table>
+	<table name="CD_FMS_REF_PAN">
+		<column/>
+	</table>
+	<table name="CD_GEO">
+		<column/>
+	</table>
+	<table name="CD_GROUPS">
+		<column/>
+	</table>
+	<table name="CD_GROUP_PERM">
+		<column/>
+	</table>
+	<table name="CD_INST_HARDWARE">
+		<column/>
+	</table>
+	<table name="CD_INVOICE">
+		<column/>
+	</table>
+	<table name="CD_INV_LINE_ITEM">
+		<column/>
+	</table>
+	<table name="CD_INV_SOURCE">
+		<column/>
+	</table>
+	<table name="CD_ITEM_IDENT">
+		<column/>
+	</table>
+	<table name="CD_KNA1">
+		<column/>
+	</table>
+	<table name="CD_KNA1EXT">
+		<column/>
+	</table>
+	<table name="CD_KNVP">
+		<column/>
+	</table>
+	<table name="CD_LINE_ITEM">
+		<column/>
+	</table>
+	<table name="CD_LOCATION">
+		<column/>
+	</table>
+	<table name="CD_LOOKUP">
+		<column/>
+	</table>
+	<table name="CD_MAINT_AGREE">
+		<column/>
+	</table>
+	<table name="CD_MANUFACTURING">
+		<column/>
+	</table>
+	<table name="CD_ORDER">
+		<column/>
+	</table>
+	<table name="CD_ORDER_SHIP">
+		<column/>
+	</table>
+	<table name="CD_PERMISSION">
+		<column/>
+	</table>
+	<table name="CD_PLANT_ORDER">
+		<column/>
+	</table>
+	<table name="CD_PORDER_SHIP">
+		<column/>
+	</table>
+	<table name="CD_PORTFOLIO_ORDER">
+		<column/>
+	</table>
+	<table name="CD_POSTING_CONV">
+		<column/>
+	</table>
+	<table name="CD_PROFILE">
+		<column/>
+	</table>
+	<table name="CD_REGION">
+		<column/>
+	</table>
+	<table name="CD_RESERVED_ITEMS">
+		<column/>
+	</table>
+	<table name="CD_ROLE">
+		<column/>
+	</table>
+	<table name="CD_ROLE_GROUP">
+		<column/>
+	</table>
+	<table name="CD_SADR">
+		<column/>
+	</table>
+	<table name="CD_SCHEDULE">
+		<column/>
+	</table>
+	<table name="CD_SERV_BILL">
+		<column/>
+	</table>
+	<table name="CD_SHIPMENT">
+		<column/>
+	</table>
+	<table name="CD_SHIP_LINE_ITEM">
+		<column/>
+	</table>
+	<table name="CD_SHIP_STATUS">
+		<column/>
+	</table>
+	<table name="CD_SHIP_STATUS_SUMRY">
+		<column/>
+	</table>
+	<table name="CD_SOFTWARE_SUB">
+		<column/>
+	</table>
+	<table name="CD_STATSDB">
+		<column/>
+	</table>
+	<table name="CD_TERRITORY">
+		<column/>
+	</table>
+	<table name="CD_UI_ENTITLE">
+		<column/>
+	</table>
+	<table name="CD_UI_ENT_CLAUSE">
+		<column/>
+	</table>
+	<table name="CD_XREF_ROLE">
+		<column/>
+	</table>
+	<table name="CINFO">
+		<column/>
+	</table>
+	<table name="COMPONENT">
+		<column/>
+	</table>
+	<table name="COMPONENT_SHIPMENT">
+		<column/>
+	</table>
+	<table name="COUNTRY_REF">
+		<column/>
+	</table>
+	<table name="COVERCA_MAIN">
+		<column/>
+	</table>
+	<table name="COVERCA_ORDERDATES">
+		<column/>
+	</table>
+	<table name="COVERCA_TOR">
+		<column/>
+	</table>
+	<table name="COVER_CROSS_REF">
+		<column/>
+	</table>
+	<table name="COVER_MAIN">
+		<column/>
+	</table>
+	<table name="COVER_MES">
+		<column/>
+	</table>
+	<table name="COVER_PO">
+		<column/>
+	</table>
+	<table name="CROSS_REF_ROLE">
+		<column/>
+	</table>
+	<table name="CSMID">
+		<column/>
+	</table>
+	<table name="CSOL_NOTIFICATION">
+		<column/>
+	</table>
+	<table name="CSOL_ORDER">
+		<column/>
+	</table>
+	<table name="CSOL_TASK">
+		<column/>
+	</table>
+	<table name="CUSTOMER">
+		<column/>
+	</table>
+	<table name="CUSTOMER_CROSS_REF">
+		<column/>
+	</table>
+	<table name="CUST_ADDR">
+		<column/>
+	</table>
+	<table name="CUST_LINE_ITEM">
+		<column/>
+	</table>
+	<table name="CUST_ORDER">
+		<column/>
+	</table>
+	<table name="DAC_CATEGORY_TRANS">
+		<column/>
+	</table>
+	<table name="DERIVED_LINE_SEG">
+		<column/>
+	</table>
+	<table name="DLS_CALCULATION_TEMP">
+		<column/>
+	</table>
+	<table name="DLS_SERIAL">
+		<column/>
+	</table>
+	<table name="ERROR_LOGGER">
+		<column/>
+	</table>
+	<table name="FEED_STATUS">
+		<column/>
+	</table>
+	<table name="FMS_LD_REF">
+		<column/>
+	</table>
+	<table name="FMS_LD_REF_PAN">
+		<column/>
+	</table>
+	<table name="FMS_REF_PAN">
+		<column/>
+	</table>
+	<table name="GEO">
+		<column/>
+	</table>
+	<table name="GROUPS">
+		<column/>
+	</table>
+	<table name="GROUP_PERMISSIONS">
+		<column/>
+	</table>
+	<table name="HOLIDAY">
+		<column/>
+	</table>
+	<table name="HOLIDAY_TABLE">
+		<column/>
+	</table>
+	<table name="INP_EE_PLAN">
+		<column/>
+	</table>
+	<table name="INVOICE">
+		<column/>
+	</table>
+	<table name="INVOICE_LINE_ITEM">
+		<column/>
+	</table>
+	<table name="INVOICE_SOURCE">
+		<column/>
+	</table>
+	<table name="IOS_CHANGE_LOG">
+		<column/>
+	</table>
+	<table name="ITEM_IDENTITY">
+		<column/>
+	</table>
+	<table name="KEYTABLE">
+		<column/>
+	</table>
+	<table name="KNA1">
+		<column/>
+	</table>
+	<table name="KNA1EXT">
+		<column/>
+	</table>
+	<table name="KNVP">
+		<column/>
+	</table>
+	<table name="LOCATION">
+		<column/>
+	</table>
+	<table name="LOOKUP">
+		<column/>
+	</table>
+	<table name="PERMISSION">
+		<column/>
+	</table>
+	<table name="PLANT_ORDER">
+		<column/>
+	</table>
+	<table name="PLANT_ORDER_SHIP">
+		<column/>
+	</table>
+	<table name="PORTFOLIO_ORDER">
+		<column/>
+	</table>
+	<table name="POSTING_CONV">
+		<column/>
+	</table>
+	<table name="PROFILE">
+		<column/>
+	</table>
+	<table name="PROFILE_COUNTRY">
+		<column/>
+	</table>
+	<table name="PSGCSOL">
+		<column/>
+	</table>
+	<table name="PURGE_CONTROL">
+		<column/>
+	</table>
+	<table name="PURGE_HISTORY">
+		<column/>
+	</table>
+	<table name="REGION">
+		<column/>
+	</table>
+	<table name="RESERVED_ITEMS">
+		<column/>
+	</table>
+	<table name="ROLE">
+		<column/>
+	</table>
+	<table name="ROLE_GROUPS">
+		<column/>
+	</table>
+	<table name="SADR">
+		<column/>
+	</table>
+	<table name="SCHEDULE">
+		<column/>
+	</table>
+	<table name="SERV_BILLINGS">
+		<column/>
+	</table>
+	<table name="SHIP_LINE_ITEM">
+		<column/>
+	</table>
+	<table name="SHIP_STATUS_SUMRY">
+		<column/>
+	</table>
+	<table name="SPLOG">
+		<column/>
+	</table>
+	<table name="STATSDB">
+		<column/>
+	</table>
+	<table name="STATUS_TRANSLATION">
+		<column/>
+	</table>
+	<table name="TA_CUST_EXPL">
+		<column/>
+	</table>
+	<table name="TERRITORY">
+		<column/>
+	</table>
+	<table name="TESTBACK">
+		<column/>
+	</table>
+	<table name="UI_ENTITLE">
+		<column/>
+	</table>
+	<table name="UI_ENTITLE_CLAUSE">
+		<column/>
+	</table>
+</tables>

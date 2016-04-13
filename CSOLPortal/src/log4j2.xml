@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <!DOCTYPE log4j:configuration SYSTEM "log4j.dtd"> -->
+<Configuration status="warn">
+	<Appenders>
+		<!-- Write to console -->
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout pattern="[%-5p] [%d{yyyy-MM-dd-HH:mm:ss.SSS}] %l, %m%n" />
+		</Console>
+		
+		<!-- 
+		<File name="File" fileName="log/csol.log">
+			<PatternLayout pattern="%m%n" />
+		</File>
+		 -->
+		 
+		<!-- Write to file -->
+		<RollingFile name="RollingFile" fileName="log/csol.log"
+			filePattern="log/$${date:yyyy-MM}/csol%d{yyyyMMdd}-%i.log.gz">
+			<PatternLayout pattern="[%-5p] [%d{yyyy-MM-dd-HH:mm:ss.SSS}] %l, %m%n" />
+			<Policies>
+				<TimeBasedTriggeringPolicy />
+				<SizeBasedTriggeringPolicy size="1024 KB" />
+			</Policies>
+			<DefaultRolloverStrategy max="10" />
+		</RollingFile>
+	</Appenders>
+	<Loggers>
+		<Logger name="TaskLogger" level="DEBUG" additivity="false">
+			<AppenderRef ref="Console" />
+			<AppenderRef ref="RollingFile" />
+		</Logger>
+		<Root level="DEBUG">
+			<AppenderRef ref="Console" />
+			<AppenderRef ref="RollingFile" />
+		</Root>
+	</Loggers>
+
+</Configuration> 
