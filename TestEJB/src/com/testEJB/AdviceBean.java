@@ -11,7 +11,7 @@ public class AdviceBean implements SessionBean{
 	@Override
 	public void ejbActivate() throws EJBException, RemoteException {
 		// TODO Auto-generated method stub
-		
+		System.out.println("HelloWorld");
 	}
 
 	@Override
